@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/Root";
+import { loader as cardLoader } from "./utils/loaders/home";
 import HomePage from "./pages/Home";
 import "./index.css";
 
@@ -14,6 +15,7 @@ function App() {
         {
           path: "card",
           // element: <SecondaryLayout />,
+          loader: cardLoader,
           children: [
             {
               index: true,
