@@ -9,6 +9,15 @@ const MainNavigation = () => {
             <Link to="/">Logo</Link>
           </li>
           <li>
+            <Link to="/">Logo</Link>
+          </li>
+          <li>
+            <Link to="/">Logo</Link>
+          </li>
+          <li>
+            <Link to="/">Logo</Link>
+          </li>
+          <li>
             <Link to="/login">Login</Link>
           </li>
         </ul>

@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/Root";
 import { cardLoader } from "./utils/loaders";
 import HomePage from "./pages/Home";
+// import CardsPage from "./pages/CardsPage";
+import CardDetailsPage from "./pages/CardDetails";
 import "./index.css";
 
 function App() {
@@ -13,13 +15,16 @@ function App() {
       children: [
         { index: true, element: <HomePage /> },
         {
-          path: "card",
-          // element: <SecondaryLayout />,
-          loader: cardLoader,
+          path: "cards", // element: <SecondaryLayout />,
           children: [
             {
               index: true,
-              // element: <CardPage />
+              // element: <CardsPage />,
+            },
+            {
+              path: ":cardId",
+              element: <CardDetailsPage />,
+              loader: cardLoader,
             },
           ],
         },
