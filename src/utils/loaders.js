@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const loader = async (search) => {
+export const cardLoader = async (search) => {
   const options = {
     method: "GET",
     url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/${search}`,

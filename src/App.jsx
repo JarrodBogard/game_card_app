@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/Root";
-import { loader as cardLoader } from "./utils/loaders/home";
+import { cardLoader } from "./utils/loaders";
 import HomePage from "./pages/Home";
 import "./index.css";
 

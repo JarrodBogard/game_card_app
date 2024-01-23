@@ -1,6 +1,6 @@
 import { useRef } from "react";
 // import axios from "axios";
-import { loader } from "../utils/loaders/home";
+import { cardLoader } from "../utils/loaders";
 import { Form } from "react-bootstrap";
 
 const HomePage = () => {
@@ -28,7 +28,7 @@ const HomePage = () => {
   const handleSearch = (event) => {
     event.preventDefault();
     search = searchRef.current.value.trim().replaceAll(" ", "%20");
-    loader(search);
+    cardLoader(search);
   };
 
   return (
