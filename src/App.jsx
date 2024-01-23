@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/Home";
+// import HomePage from "./pages/Home";
 import "./index.css";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       children: [
         {
           index: true,
-          element: <HomePage />,
+          // element: <HomePage />,
           children: [
             {
               path: "card",
