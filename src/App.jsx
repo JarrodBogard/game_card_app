@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/Root";
-import { cardLoader } from "./utils/loaders";
+import { cardDetailsLoader, cardsLoader } from "./utils/loaders";
 import HomePage from "./pages/Home";
-// import CardsPage from "./pages/CardsPage";
+import CardsPage from "./pages/CardsPage";
 import CardDetailsPage from "./pages/CardDetails";
 import "./index.css";
 
@@ -19,12 +19,13 @@ function App() {
           children: [
             {
               index: true,
-              // element: <CardsPage />,
+              element: <CardsPage />,
+              loader: cardsLoader,
             },
             {
-              path: ":cardId",
+              path: ":card",
               element: <CardDetailsPage />,
-              loader: cardLoader,
+              loader: cardDetailsLoader,
             },
           ],
         },

@@ -13,9 +13,8 @@ const CardDetails = () => {
         <li>Health: {card.health}</li>
         <li>Cost: {card.cost}</li>
         <li>Faction: {card.faction}</li>
-        <li>Mechanics: {card.text.replace(/(<([^>]+)>)/gi, "")}</li>
       </ul>
-      <img src={card.img} />;
+      <img src={card.img} />
     </div>
   );
 

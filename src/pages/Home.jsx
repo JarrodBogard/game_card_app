@@ -14,10 +14,11 @@ const HomePage = () => {
   };
 
   return (
-    <div className="container">
-      <h1>Card Search</h1>
+    <div className="container me-auto h-50 d-flex flex-column justify-content-center align-items-center">
+      <h1 className="text-center">Card Search</h1>
       <Form onSubmit={handleSearch}>
         <Form.Control
+          className="w-500"
           type="text"
           placeholder="Search card by name e.g. Ysera, Cairne Bloodhoof"
           ref={searchRef}
